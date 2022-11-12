@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-  
+    <h2>
+      <button type="submit" class="btn btn-primary" onclick="window.location.href='#/empview'">Go</button>
+    </h2>
+
   </div>
 </template>
 
@@ -11,7 +13,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: ' Welcome to Starship entertainment'
     }
   }
 }

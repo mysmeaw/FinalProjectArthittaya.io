@@ -16,6 +16,7 @@ class EmployeeController extends Controller
             'name' => $request->input('name'),
             'address' => $request->input('address'),
             'mobile' => $request->input('mobile'),
+            'position' => $request->input('position'),
         ]);
         $employees->save();
         return response()->json('Employee created!');
