@@ -2,7 +2,7 @@
   <div>
     <h1>{{ msg }}</h1>
     <h2>
-      <button type="submit" class="btn btn-primary" onclick="window.location.href='#/empview'">Go</button>
+      <button type="submit" class="btn btn-dark" onclick="window.location.href='#/empview'">Go!!</button>
     </h2>
 
   </div>

@@ -19,14 +19,14 @@
     <label>position</label>
     <input type="text" v-model="employee.position" class="form-control"  placeholder=" position">
   </div>
-  <button type="submit" class="btn btn-primary">submit</button>
+  <button type="submit" class="btn btn-dark">submit</button>
 </form> 
 
 
 
 
       <h2>Employee View</h2>
-      <table class="table table-dark">
+      <table class="table table-info">
   <thead>
     <tr>
       <th scope="col">ID</th>
