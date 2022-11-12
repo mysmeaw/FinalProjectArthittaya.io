@@ -47,12 +47,13 @@
           <td>{{ employee.position }}</td>
 
           <td>
+            <button type="button" class="btn btn-info" @click="view(employee)">View</button>
             <button type="button" class="btn btn-warning" @click="edit(employee)">Edit</button>
             <button type="button" class="btn btn-danger"  @click="remove(employee)">Delete</button>
           </td>
         </tr>
   </tbody>
-  
+
 </table>
     </div>
   </template>
@@ -96,6 +97,10 @@
                       }
                   );
            },
+           view(employee){
+              this.employee = employee;
+              var editrecords = 'http://127.0.0.1:8000/api/view/'+ this.employee.id;
+            },
            save()
            {
             if(this.employee.id == '')
